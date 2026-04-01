@@ -2,17 +2,16 @@ import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import { Link } from 'expo-router'
 
-const Home = () => {
+const About = () => {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}> Home</Text>
-      <Link href="/about" style={styles.linkText}>About Page
-      </Link>
+      <Text> About</Text>
+      <Link href="/" style={styles.linkText}>Back to home screen</Link>
     </View>
   )
 }
 
-export default Home
+export default About
 
 const styles = StyleSheet.create({
   container: {
