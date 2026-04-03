@@ -1,14 +1,16 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, Text } from 'react-native'
 import React from 'react'
 import { Link } from 'expo-router'
 
+import ThemedView from '../components/ThemedView'
+
 const Home = () => {
   return (
-    <View style={styles.container}>
+    <ThemedView style={styles.container}>
       <Text style={styles.text}> Home</Text>
-      <Link href="/about" style={styles.linkText}>About Page
-      </Link>
-    </View>
+      <Link href="/about" style={styles.linkText}>About Page</Link>
+      <Link href="/shoplist" style={styles.linkText}>Shoping Page</Link>
+    </ThemedView>
   )
 }
 
@@ -20,7 +22,6 @@ const styles = StyleSheet.create({
     padding: 24,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: '#ffffff'
   },
   text: {
     textAlign: 'center'

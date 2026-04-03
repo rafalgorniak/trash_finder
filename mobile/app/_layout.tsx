@@ -1,4 +1,4 @@
-import { StyleSheet, Text, useColorScheme, View } from 'react-native'
+import { StyleSheet, useColorScheme } from 'react-native'
 import React from 'react'
 import {  Stack } from 'expo-router'
 import { Colors } from '../constants/Colors'
@@ -9,7 +9,7 @@ const RootLayout = () => {
 
   return (
     <Stack screenOptions={{
-        headerStyle: { backgroundColor: theme.background},
+        headerStyle: { backgroundColor: theme.navBackground},
         headerTintColor: theme.title,
         headerTitleStyle: {
           fontWeight: 'bold',
